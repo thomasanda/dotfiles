@@ -1,4 +1,7 @@
 # Set Variables
+# Syntax highlighting for man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 
 # Change ZSH Options
 
@@ -20,4 +23,6 @@ function mkcd() {
 
 # Use ZSH Plugins
 
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
