@@ -7,6 +7,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 alias ls='exa -lFh --git'
 alias lsa='exa -laFh --git'
 alias lst='exa -laFh --tree --level=2'
+alias man=batman
 
 
 # Customize Prompt(s)
@@ -20,6 +21,10 @@ RPROMPT='%*'
 # Write Handy Functions
 function mkcd() {
  mkdir -p "$@" && cd "$_";
+}
+
+function exsists() {
+    command -v $1 >/dev/null 2>&1
 }
 
 # Use ZSH Plugins
