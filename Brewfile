@@ -23,6 +23,7 @@ brew "lua"
 brew "luarocks"
 brew "mongodb-community"
 brew "macvim"
+brew "mas"
 brew "nvm"
 brew "node"
 brew "p7zip"
@@ -53,3 +54,6 @@ cask "slack"
 cask "tidal"
 cask "visual-studio-code"
 cask "zoom"
+
+# Mac App Store Applications
+mas "Snappy", id: 512617038
