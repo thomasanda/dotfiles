@@ -8,7 +8,8 @@ alias ls='exa -lFh --git'
 alias lsa='exa -laFh --git'
 alias lst='exa -laFh --tree --level=2'
 alias man=batman
-
+alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 # Customize Prompt(s)
 PROMPT='
@@ -23,6 +24,10 @@ function mkcd() {
  mkdir -p "$@" && cd "$_";
 }
 
+function code() {
+    echo "Can't open ($@) because this function superseeds the original code command."
+}
+
 function exsists() {
     command -v $1 >/dev/null 2>&1
 }
@@ -32,3 +37,5 @@ function exsists() {
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+
+eval $(thefuck --alias)
