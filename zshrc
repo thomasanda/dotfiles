@@ -47,6 +47,9 @@ alias pumpitup="osascript -e 'set volume output volume 100'"
 # Lock the screen (when going AFK)
 alias afk="osascript -e 'tell application \"System Events\" to keystroke \"q\" using {command down,control down}'"
 
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
 
 
 # Customize Prompt(s)
