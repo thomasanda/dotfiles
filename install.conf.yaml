@@ -11,14 +11,15 @@
     ~/.config/bat/:
         create: true
         path: config/bat/
+    ~/.macos: macos/macos
 
 - create:
     - ~/Work
 
-- shell:
-    - command: ./setup_homebrew.zsh
-      stdout: true
-      stderr: true
-    - command: ./setup_zsh.zsh
-      stdout: true
-      stderr: true
+# - shell:
+#     - command: ./setup_homebrew.zsh
+#       stdout: true
+#       stderr: true
+#     - command: ./setup_zsh.zsh
+#       stdout: true
+#       stderr: true
