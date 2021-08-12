@@ -5,18 +5,22 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc:
-    ~/.zshenv:
+    #zsh/prezto setup
+    ~/.zprezto: prezto
+    ~/.zlogin: prezto/runcoms/zlogin
+    ~/.zlogout: prezto/runcoms/zlogout
+    ~/.zpreztorc: prezto/runcoms/zpreztorc
+    ~/.zprofile: prezto/runcoms/zprofile
+    ~/.zshenv: prezto/runcoms/zshenv
+    ~/.zshrc: prezto/runcoms/zshrc
     ~/.gitconfig:
-    ~/.config/bat/:
-        create: true
-        path: config/bat/
     ~/.macos: macos/macos
 
 - create:
     - ~/Work
 
 # - shell:
+#     - [git submodule update --init --recursive, Installing submodules]
 #     - command: ./setup_homebrew.zsh
 #       stdout: true
 #       stderr: true

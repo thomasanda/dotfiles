@@ -1,6 +1,12 @@
-# Set Variables
-export NULLCMD=bat
+# Variables
+export DOTFILES="$HOME/.dotfiles"
+export HOMEBREW_BUNDLE_FILE="$DOTFILES/Brewfile"
+
+## Switch off OSX gatekeeper
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+## change default command from cat to bat
+export NULLCMD=bat
 
 # Change ZSH Options
 
