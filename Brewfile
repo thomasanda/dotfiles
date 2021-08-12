@@ -34,6 +34,7 @@ brew "thefuck"
 brew "tmux"
 brew "yarn"
 brew "youtube-dl"
+brew "zsh"
 
 # Casks (Applications)
 cask "alfred"
